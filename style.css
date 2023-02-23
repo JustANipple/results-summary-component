@@ -228,9 +228,17 @@ body {
   }
   .container {
     display: flex;
+    border-radius: 2rem;
+    overflow: hidden;
+    max-width: 45rem;
   }
 
   .result {
+    flex: 1;
+    border-radius: 2rem;
+  }
+
+  .summary {
     flex: 1;
   }
 }
