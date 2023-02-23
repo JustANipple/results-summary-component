@@ -53,4 +53,70 @@ p, h1, h2, h3, h4, h5, h6 {
 /* ====== Styles ====== */
 body {
     font-family: var(--ff);
+    background-color: var(--main-bg-clr);
 }
+
+/* ====== Result block ====== */
+.result {
+  background: linear-gradient(
+    0deg, var(--result-btm-bg-clr),
+    var(--result-top-bg-clr));
+  padding: 1.5rem 2.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.your-result {
+  color: var(--par-clr);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-par);
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(
+    0deg, var(--cirlce-btm-bg-clr),
+    var(--circle-top-bg-clr));
+    border-radius: 5rem;
+  width: 9rem;
+  height: 9rem;
+}
+
+.result-number {
+  font-size: 3.5rem;
+  color: var(--main-bg-clr);
+  line-height: 1;
+  font-weight: var(--fw-bold);
+}
+
+.out-of {
+  color: var(--par-clr);
+  opacity: 0.6;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.comment {
+  color: var(--h-clr);
+}
+
+.comment-descr {
+  color: var(--par-clr);
+  opacity: 0.9;
+}
+
+/* ====== Summary block ====== */
