@@ -84,7 +84,7 @@ body {
   background: linear-gradient(
     0deg, var(--cirlce-btm-bg-clr),
     var(--circle-top-bg-clr));
-    border-radius: 5rem;
+  border-radius: 5rem;
   width: 9rem;
   height: 9rem;
 }
@@ -123,7 +123,7 @@ body {
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .summary-heading {
@@ -134,7 +134,7 @@ body {
 .summary-components {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .sum-component-one,
@@ -143,7 +143,8 @@ body {
 .sum-component-four {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .left-part,
@@ -151,22 +152,70 @@ body {
   display: flex;
 }
 
+.left-part {
+  gap: 0.75rem;
+}
+
 .sum-component-one {
   background-color: hsl(5, 100%, 98%);
 }
 
 .sum-component-one .score-type {
-  color: red;
+  color: var(--smr-red-text-clr);
+  font-weight: var(--fw-bold);
 }
 
 .sum-component-two {
   background-color: hsl(39, 100%, 97%);
 }
 
+.sum-component-two .score-type {
+  color: var(--smr-orange-text-clr);
+  font-weight: var(--fw-bold);
+}
+
 .sum-component-three {
   background-color: hsl(173, 47%, 96%);
 }
 
+.sum-component-three .score-type {
+  color: var(--smr-green-text-clr);
+  font-weight: var(--fw-bold);
+}
+
 .sum-component-four {
   background-color: hsl(240, 63%, 97%);
+}
+
+.sum-component-four .score-type {
+  color: var(--smr-blue-text-clr);
+  font-weight: var(--fw-bold);
+}
+
+.score {
+  font-weight: var(--fw-extraBold);
+  color: var(--btn-clr);
+}
+
+.max-score {
+  font-weight: var(--fw-extraBold);
+  color: var(--btn-clr);
+  opacity: 0.5;
+}
+
+.continue-btn {
+  text-decoration: none;
+  background-color: var(--btn-clr);
+  color: var(--main-bg-clr);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.125rem;
+}
+
+.continue-btn:hover {
+  background: linear-gradient(
+    0deg, var(--result-btm-bg-clr),
+    var(--result-top-bg-clr));
+  transition: gradient 1s ease-in-out;
 }
