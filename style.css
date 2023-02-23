@@ -72,7 +72,6 @@ body {
 
 .your-result {
   color: var(--par-clr);
-  font-weight: var(--fw-bold);
   font-size: var(--fs-par);
 }
 
@@ -120,3 +119,54 @@ body {
 }
 
 /* ====== Summary block ====== */
+.summary {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summary-heading {
+  font-weight: var(--fw-bold);
+  font-size: 1.125rem;
+}
+
+.summary-components {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sum-component-one,
+.sum-component-two,
+.sum-component-three,
+.sum-component-four {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.left-part,
+.right-part {
+  display: flex;
+}
+
+.sum-component-one {
+  background-color: hsl(5, 100%, 98%);
+}
+
+.sum-component-one .score-type {
+  color: red;
+}
+
+.sum-component-two {
+  background-color: hsl(39, 100%, 97%);
+}
+
+.sum-component-three {
+  background-color: hsl(173, 47%, 96%);
+}
+
+.sum-component-four {
+  background-color: hsl(240, 63%, 97%);
+}
