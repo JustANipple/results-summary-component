@@ -217,5 +217,20 @@ body {
   background: linear-gradient(
     0deg, var(--result-btm-bg-clr),
     var(--result-top-bg-clr));
-  transition: gradient 1s ease-in-out;
+}
+
+/* ====== Desktop view ====== */
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+  }
+
+  .result {
+    flex: 1;
+  }
 }
