@@ -220,25 +220,73 @@ body {
 }
 
 /* ====== Desktop view ====== */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 630px) {
   body {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .container {
     display: flex;
     border-radius: 2rem;
     overflow: hidden;
     max-width: 45rem;
+    box-shadow: 0px 10px 40px -30px black;
   }
 
   .result {
     flex: 1;
     border-radius: 2rem;
+    padding: 2rem 3rem 2.5rem 3rem;
+    gap: 2rem;
+  }
+
+  .your-result {
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 8rem;
+  }
+
+  .result-number {
+    font-size: 4.5rem;
+  }
+
+  .out-of {
+    font-size: 1.25rem;
+  }
+
+  .comment-descr {
+    padding-inline: 1rem;
   }
 
   .summary {
     flex: 1;
+    padding-inline: 2.5rem;
+    padding-block: 2rem
+  }
+
+  .summary-components p{
+    font-size: 1.125rem;
+  }
+
+  .comment {
+    font-size: 2rem;
+  }
+
+  .comment-descr {
+    font-size: 1.125rem;
+  }
+
+  .summary-heading {
+    font-size: 1.5rem;
+  }
+
+  .continue-btn {
+    margin-block: 1rem;
   }
 }
