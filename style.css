@@ -160,7 +160,7 @@ body {
   background-color: hsl(5, 100%, 98%);
 }
 
-.sum-component-one .score-type {
+.sum-component-one .score-type-one {
   color: var(--smr-red-text-clr);
   font-weight: var(--fw-bold);
 }
@@ -169,7 +169,7 @@ body {
   background-color: hsl(39, 100%, 97%);
 }
 
-.sum-component-two .score-type {
+.sum-component-two .score-type-two {
   color: var(--smr-orange-text-clr);
   font-weight: var(--fw-bold);
 }
@@ -178,7 +178,7 @@ body {
   background-color: hsl(173, 47%, 96%);
 }
 
-.sum-component-three .score-type {
+.sum-component-three .score-type-three {
   color: var(--smr-green-text-clr);
   font-weight: var(--fw-bold);
 }
@@ -187,12 +187,15 @@ body {
   background-color: hsl(240, 63%, 97%);
 }
 
-.sum-component-four .score-type {
+.sum-component-four .score-type-four {
   color: var(--smr-blue-text-clr);
   font-weight: var(--fw-bold);
 }
 
-.score {
+.score-one,
+.score-two,
+.score-three,
+.score-four {
   font-weight: var(--fw-extraBold);
   color: var(--btn-clr);
 }
