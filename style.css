@@ -1,0 +1,56 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* ====== Custom properties ====== */
+:root {
+    /* colors */
+    --smr-red-text-clr: hsl(0, 100%, 67%);
+    --smr-orange-text-clr: hsl(39, 100%, 56%);
+    --smr-green-text-clr: hsl(166, 100%, 37%);
+    --smr-blue-text-clr: hsl(234, 85%, 45%);
+    --result-top-bg-clr: hsl(252, 100%, 67%);
+    --result-btm-bg-clr: hsl(241, 81%, 54%);
+    --circle-top-bg-clr: hsla(256, 72%, 46%, 1);
+    --cirlce-btm-bg-clr: hsla(241, 72%, 46%, 0);
+    --main-bg-clr: hsl(0, 0%, 100%);
+    --h-clr: hsl(221, 100%, 96%);
+    --par-clr: hsl(241, 100%, 89%);
+    --btn-clr: hsl(224, 30%, 27%);
+
+    /* font */
+    --fs-par: 1.125rem;
+    --ff: 'Hanken Grotesk', sans-serif;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-extraBold: 800;
+}
+
+/* ====== Styles ====== */
+body {
+    font-family: var(--ff);
+}
